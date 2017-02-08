@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.contactlist_proj.ui.DetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/fd_cntImgDtl"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/fd_cntNameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fd_cntImgDtl"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Name"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/fd_cntName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fd_cntImgDtl"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="#Name"
+        android:textSize="25dp"
+        android:layout_below="@+id/fd_cntNameLbl"/>
+
+    <TextView
+        android:id="@+id/fd_cntCompanyLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fd_cntImgDtl"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Company"
+        android:textSize="15dp"
+        android:layout_below="@+id/fd_cntName"/>
+
+    <TextView
+        android:id="@+id/fd_cntCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fd_cntImgDtl"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="#Company"
+        android:textSize="25dp"
+        android:layout_below="@+id/fd_cntCompanyLbl"/>
+
+    <RelativeLayout
+        android:id="@+id/fd_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fd_cntImgDtl"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/fd_cntPhoneLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:text="Phone"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fd_cntPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="#Company"
+            android:textSize="25dp"
+            android:layout_below="@+id/fd_cntPhoneLbl"/>
+
+        <TextView
+            android:id="@+id/fd_cntHomeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="145dp"
+            android:layout_toRightOf="@+id/fd_cntPhoneLbl"
+            android:text="Home"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fd_cntHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="65dp"
+            android:layout_toRightOf="@+id/fd_cntPhone"
+            android:text="#Home"
+            android:textSize="25dp"
+            android:layout_below="@+id/fd_cntPhoneLbl"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fd_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fd_phone"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/fd_cntAddressLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Address"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fd_cntAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="#Address"
+            android:textSize="25dp"
+            android:layout_below="@+id/fd_cntAddressLbl"/>
+
+        <TextView
+            android:id="@+id/fd_cntAdWorkLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fd_cntAddressLbl"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="135dp"
+            android:text="Work"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fd_cntAdWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="85dp"
+            android:layout_toRightOf="@+id/fd_cntAddress"
+            android:text="#Work"
+            android:textSize="25dp"
+            android:layout_below="@+id/fd_cntAdWorkLbl"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fd_bday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/fd_address">
+
+        <TextView
+            android:id="@+id/fd_cntBdayLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Birthday"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fd_cntBday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="#Birthday"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fd_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/fd_bday">
+
+        <TextView
+            android:id="@+id/fd_cntEmailLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Email"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fd_cntEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="#Home"
+            android:textSize="25dp"/>
+    </LinearLayout>
+</RelativeLayout>
